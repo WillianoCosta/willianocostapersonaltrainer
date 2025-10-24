@@ -39,6 +39,7 @@ section {
 img {
     max-width: 100%;
     height: auto;
+    
 }
 
 a {
@@ -90,6 +91,7 @@ ul {
     border: none;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin: 0.5rem; /* Adicionado para espaçamento em mobile */
 }
 
 .cta-button:hover {
@@ -118,9 +120,10 @@ ul {
 }
 
 .nav-logo img {
-    height: 100px;
-    width: 100px;
+    height: 80px; /* Ajustado de 100px para 60px */
+    width: 80px;  /* Ajustado de 100px para 60px */
     border-radius: 100%;
+    filter: drop-shadow(0 0 8px var(--primary-color));
 }
 
 .nav-menu {
@@ -217,12 +220,14 @@ ul {
     width: 100%;
     height: 400px;
     object-fit: cover;
+    filter: drop-shadow(0 0 8px var(--primary-color));
 }
 
 .about-content h3 {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
+    filter: drop-shadow(0 0 8px var(--primary-color));
 }
 
 .about-content p {
@@ -276,11 +281,38 @@ ul {
 .plans-image-container {
     max-width: 800px;
     margin: 0 auto 2.5rem;
+    filter: drop-shadow(0 0 8px var(--primary-color));
 }
 
 .plans-image-container img {
     border-radius: 10px;
 }
+
+/* ======== ESTILOS ADICIONADOS ======== */
+.plan-buttons-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap; /* Para quebrar a linha em telas pequenas */
+    margin-bottom: 1rem;
+}
+
+.mfit-button {
+    background: var(--card-bg);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.mfit-button:hover {
+    background: var(--primary-color);
+    color: var(--dark-bg);
+    border-color: var(--primary-color);
+}
+
+.mfit-button i {
+    margin-right: 0.5rem;
+}
+/* ==================================== */
 
 .whatsapp-button {
     background: var(--whatsapp-green);
@@ -352,11 +384,13 @@ ul {
 .footer-section {
     background: #111;
     padding: 4rem 0 2rem;
+    filter: drop-shadow(0 0 8px var(--primary-color));
 }
 
 .footer-logo {
     width: 100px;
     margin-bottom: 1rem;
+    filter: drop-shadow(0 0 8px var(--primary-color));
 }
 
 .footer-section p {
@@ -366,6 +400,7 @@ ul {
 
 .social-links {
     margin-bottom: 1.5rem;
+    filter: drop-shadow(0 0 8px var(--primary-color));
 }
 
 .social-links a {
@@ -402,7 +437,7 @@ ul {
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 70px; /* Altura da navbar */
+        top: 82px; /* Ajustado para a nova altura da navbar (60px + padding) */
         flex-direction: column;
         background: var(--dark-bg);
         width: 100%;
@@ -461,5 +496,15 @@ ul {
 
     .contact-form {
         padding: 2rem;
+    }
+
+    /* Ajuste para botões na seção de planos em mobile */
+    .plan-buttons-wrapper {
+        gap: 0.5rem;
+    }
+    
+    .cta-button {
+        width: 90%; /* Faz os botões ocuparem mais espaço */
+        margin: 0.5rem auto;
     }
 }

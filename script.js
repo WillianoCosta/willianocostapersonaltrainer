@@ -67,3 +67,5 @@ form.addEventListener('submit', e => {
         }, 5000);
     });
 });
+
+// A CHAVE "}" EXTRA QUE ESTAVA AQUI FOI REMOVIDA
