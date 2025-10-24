@@ -28,7 +28,7 @@ const submitButton = document.getElementById('submit-button');
 //
 // IMPORTANTE: Substitua esta URL pela URL do seu Web App do Google Apps Script
 //
-const SCRIPT_URL = 'COLE_A_URL_DO_SEU_APPS_SCRIPT_AQUI';
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxn1SVv_HZXPNwU6ECSHlh4KqGVkj5dD2Obv-OmdOGdqr2lepDvtJNKx6-G6RW3B2pbnQ/exec';
 //
 //
 
@@ -67,5 +67,6 @@ form.addEventListener('submit', e => {
         }, 5000);
     });
 });
+
 
 // A CHAVE "}" EXTRA QUE ESTAVA AQUI FOI REMOVIDA
