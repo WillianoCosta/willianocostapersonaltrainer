@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Williano Costa - Personal Trainer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#home" class="nav-logo">
+                    <img src="logo redondo.jpg" alt="Logo Williano Costa">
+                </a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#home" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#servicos" class="nav-link">Consultoria</a></li>
+                    <li class="nav-item"><a href="#planos" class="nav-link">Planos</a></li>
+                    <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="video-background">
+                <video src="vd.mp4" autoplay muted loop playsinline></video>
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1>Transforme seu corpo e sua vida</h1>
+                <p>Alcance seus objetivos com acompanhamento 100% personalizado.</p>
+                <a href="#planos" class="cta-button">Comece Agora</a>
+            </div>
+        </section>
+
+        <section id="sobre" class="about-section">
+            <div class="container grid-2">
+                <div class="about-image">
+                    <img src="personal.jpg" alt="Foto de Williano Costa">
+                </div>
+                <div class="about-content">
+                    <h2 class="section-title">Sobre Mim</h2>
+                    <h3>Williano Costa, Personal Trainer</h3>
+                    <p>Minha missão é ajudar você a construir a melhor versão de si mesmo. Com anos de experiência e paixão pelo fitness, desenvolvo programas de treinamento que não são apenas eficazes, mas também sustentáveis e adaptados à sua rotina.</p>
+                    <p>Seja para ganho de massa, perda de peso ou melhoria da saúde geral, estou aqui para guiar, motivar e garantir que você alcance resultados reais. Vamos treinar juntos!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicos" class="services-section">
+            <div class="container">
+                <h2 class="section-title text-center">Evolua com a Consultoria Online</h2>
+                <div class="service-card" style="background-image: url('logo.jpg');">
+                    <div class="service-overlay">
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Programas de treinamento personalizados</li>
+                            <li><i class="fas fa-check-circle"></i> Acesso a vídeos de exercícios</li>
+                            <li><i class="fas fa-check-circle"></i> Suporte online constante</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="planos" class="plans-section">
+            <div class="container text-center">
+                <h2 class="section-title">Planos de Acompanhamento</h2>
+                <p class="section-subtitle">Escolha o plano ideal para você e vamos começar.</p>
+                <div class="plans-image-container">
+                    <img src="online.jpg" alt="Planos de Acompanhamento - Mensal, Trimestral, Semestral">
+                </div>
+                <a href="https://wa.me/5584996106961" target="_blank" class="cta-button whatsapp-button">
+                    <i class="fab fa-whatsapp"></i> Contratar via WhatsApp
+                </a>
+                <small>Acesso direto ao whatsapp</small>
+            </div>
+        </section>
+
+        <section id="contato" class="contact-section">
+            <div class="container">
+                <h2 class="section-title text-center">Entre em Contato</h2>
+                <p class="section-subtitle text-center">Envie uma mensagem e tire suas dúvidas.</p>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button" id="submit-button">Enviar Mensagem</button>
+                    <p id="form-status"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-section">
+        <div class="container text-center">
+            <img src="logo redondo.jpg" alt="Logo WC" class="footer-logo">
+            <p>Williano Costa - Personal Trainer</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/papaipersonalpancreas" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/5584996106961" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p class="copyright">&copy; <span id="current-year"></span> Williano Costa. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
